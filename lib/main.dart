@@ -13,23 +13,44 @@ class Home extends StatelessWidget {
         title: Text('My first app'),
         backgroundColor: Colors.red[300],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Text("Hello World"),
-          FlatButton(
-            onPressed: () {},
-            child: Text('Click Me'),
-            color: Colors.amber,
-          ),
           Container(
             padding: EdgeInsets.all(30.00),
-            color: Colors.cyan,
-            child: Text('Inside Container'),
+            color: Colors.blueGrey,
+            child: Text('One'),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.00),
+            color: Colors.pinkAccent,
+            child: Text('Two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.00),
+            color: Colors.lightGreen,
+            child: Text('Three'),
           ),
         ],
       ),
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //     Text("Hello World"),
+      //     FlatButton(
+      //       onPressed: () {},
+      //       child: Text('Click Me'),
+      //       color: Colors.amber,
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30.00),
+      //       color: Colors.cyan,
+      //       child: Text('Inside Container'),
+      //     ),
+      //   ],
+      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('Click'),
